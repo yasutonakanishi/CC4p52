@@ -1,0 +1,141 @@
+#
+## Alias OBJ Material File
+# Exported from SketchUp, (c) 2000-2012 Trimble Navigation Limited
+
+newmtl Google_Earth_Snapshot1
+Ka 0.000000 0.000000 0.000000
+Kd 0.454902 0.454902 0.454902
+Ks 0.330000 0.330000 0.330000
+map_Kd WaltDisneyConcertHall/Google_Earth_Snapshot1.jpg
+
+newmtl _LightGray_
+Ka 0.000000 0.000000 0.000000
+Kd 0.662745 0.662745 0.662745
+Ks 0.330000 0.330000 0.330000
+
+newmtl WDCH_Steel_Panel3_reflected
+Ka 0.000000 0.000000 0.000000
+Kd 0.639216 0.658824 0.670588
+Ks 0.330000 0.330000 0.330000
+map_Kd WaltDisneyConcertHall/WDCH_Steel_Panel3_reflected.jpg
+
+newmtl WDCH_Steel_Panel1_reflected
+Ka 0.000000 0.000000 0.000000
+Kd 0.682353 0.705882 0.717647
+Ks 0.330000 0.330000 0.330000
+map_Kd WaltDisneyConcertHall/WDCH_Steel_Panel1_reflected.jpg
+
+newmtl Steel_Plate_1
+Ka 0.000000 0.000000 0.000000
+Kd 0.647059 0.666667 0.682353
+Ks 0.330000 0.330000 0.330000
+map_Kd WaltDisneyConcertHall/Steel_Plate_1.jpg
+
+newmtl WDCH_Roof
+Ka 0.000000 0.000000 0.000000
+Kd 0.490196 0.470588 0.458824
+Ks 0.330000 0.330000 0.330000
+map_Kd WaltDisneyConcertHall/WDCH_Roof.jpg
+
+newmtl WDCH_Wall3
+Ka 0.000000 0.000000 0.000000
+Kd 0.690196 0.670588 0.592157
+Ks 0.330000 0.330000 0.330000
+map_Kd WaltDisneyConcertHall/WDCH_Wall3.jpg
+
+newmtl WDCH_Wall2
+Ka 0.000000 0.000000 0.000000
+Kd 0.694118 0.658824 0.580392
+Ks 0.330000 0.330000 0.330000
+map_Kd WaltDisneyConcertHall/WDCH_Wall2.jpg
+
+newmtl WDCH_Steel_Panel2_reflected
+Ka 0.000000 0.000000 0.000000
+Kd 0.521569 0.564706 0.631373
+Ks 0.330000 0.330000 0.330000
+map_Kd WaltDisneyConcertHall/WDCH_Steel_Panel2_reflected.jpg
+
+newmtl WDCH_Shopfront2b
+Ka 0.000000 0.000000 0.000000
+Kd 0.454902 0.498039 0.560784
+Ks 0.330000 0.330000 0.330000
+map_Kd WaltDisneyConcertHall/WDCH_Shopfront2b.jpg
+
+newmtl WDCH_Steel_Panel5_reflected
+Ka 0.000000 0.000000 0.000000
+Kd 0.611765 0.647059 0.690196
+Ks 0.330000 0.330000 0.330000
+map_Kd WaltDisneyConcertHall/WDCH_Steel_Panel5_reflected.jpg
+
+newmtl WDCH_Shopfront1
+Ka 0.000000 0.000000 0.000000
+Kd 0.262745 0.266667 0.254902
+Ks 0.330000 0.330000 0.330000
+map_Kd WaltDisneyConcertHall/WDCH_Shopfront1.jpg
+
+newmtl Reference_copy
+Ka 0.000000 0.000000 0.000000
+Kd 0.478431 0.474510 0.454902
+Ks 0.330000 0.330000 0.330000
+map_Kd WaltDisneyConcertHall/Reference_copy.jpg
+
+newmtl WDCH_Wall1
+Ka 0.000000 0.000000 0.000000
+Kd 0.709804 0.662745 0.556863
+Ks 0.330000 0.330000 0.330000
+map_Kd WaltDisneyConcertHall/WDCH_Wall1.jpg
+
+newmtl WDCH_Wall2_1_
+Ka 0.000000 0.000000 0.000000
+Kd 0.694118 0.658824 0.580392
+Ks 0.330000 0.330000 0.330000
+map_Kd WaltDisneyConcertHall/WDCH_Wall2_1_.jpg
+
+newmtl WDCH_Wall1_1_
+Ka 0.000000 0.000000 0.000000
+Kd 0.709804 0.662745 0.556863
+Ks 0.330000 0.330000 0.330000
+map_Kd WaltDisneyConcertHall/WDCH_Wall1_1_.jpg
+
+newmtl WDCH_Shopfront2
+Ka 0.000000 0.000000 0.000000
+Kd 0.247059 0.254902 0.247059
+Ks 0.330000 0.330000 0.330000
+map_Kd WaltDisneyConcertHall/WDCH_Shopfront2.jpg
+
+newmtl WDCH_Shopfront1b
+Ka 0.000000 0.000000 0.000000
+Kd 0.133333 0.184314 0.223529
+Ks 0.330000 0.330000 0.330000
+map_Kd WaltDisneyConcertHall/WDCH_Shopfront1b.jpg
+
+newmtl WDCH_Shopfront1b1_
+Ka 0.000000 0.000000 0.000000
+Kd 0.133333 0.184314 0.223529
+Ks 0.330000 0.330000 0.330000
+map_Kd WaltDisneyConcertHall/WDCH_Shopfront1b1_.jpg
+
+newmtl WDCH_Shopfront2_1_
+Ka 0.000000 0.000000 0.000000
+Kd 0.247059 0.254902 0.247059
+Ks 0.330000 0.330000 0.330000
+map_Kd WaltDisneyConcertHall/WDCH_Shopfront2_1_.jpg
+
+newmtl WDCH_Entrace_Glazing
+Ka 0.000000 0.000000 0.000000
+Kd 0.415686 0.482353 0.552941
+Ks 0.330000 0.330000 0.330000
+map_Kd WaltDisneyConcertHall/WDCH_Entrace_Glazing.jpg
+
+newmtl WDCH_Entrace_Glazing1_
+Ka 0.000000 0.000000 0.000000
+Kd 0.415686 0.482353 0.552941
+Ks 0.330000 0.330000 0.330000
+map_Kd WaltDisneyConcertHall/WDCH_Entrace_Glazing1_.jpg
+
+newmtl WDCH_Wall1_2_
+Ka 0.000000 0.000000 0.000000
+Kd 0.709804 0.662745 0.556863
+Ks 0.330000 0.330000 0.330000
+map_Kd WaltDisneyConcertHall/WDCH_Wall1_2_.jpg
+

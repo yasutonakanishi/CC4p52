@@ -2,5 +2,43 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/jme3/assets.jar"/>
+	<classpathentry kind="lib" path="lib/jme3/eventbus.jar"/>
+	<classpathentry kind="lib" path="lib/jme3/j-ogg-oggd.jar"/>
+	<classpathentry kind="lib" path="lib/jme3/j-ogg-vorbisd.jar"/>
+	<classpathentry kind="lib" path="lib/jme3/jbullet.jar"/>
+	<classpathentry kind="lib" path="lib/jme3/jinput.jar"/>
+	<classpathentry kind="lib" path="lib/jme3/jME3-core.jar"/>
+	<classpathentry kind="lib" path="lib/jme3/jME3-desktop.jar"/>
+	<classpathentry kind="lib" path="lib/jme3/jME3-effects.jar"/>
+	<classpathentry kind="lib" path="lib/jme3/jME3-jbullet.jar"/>
+	<classpathentry kind="lib" path="lib/jme3/jME3-jogg.jar"/>
+	<classpathentry kind="lib" path="lib/jme3/jME3-lwjgl-natives.jar"/>
+	<classpathentry kind="lib" path="lib/jme3/jME3-lwjgl.jar"/>
+	<classpathentry kind="lib" path="lib/jme3/jME3-networking.jar"/>
+	<classpathentry kind="lib" path="lib/jme3/jME3-niftygui.jar"/>
+	<classpathentry kind="lib" path="lib/jme3/jME3-plugins.jar"/>
+	<classpathentry kind="lib" path="lib/jme3/jME3-terrain.jar"/>
+	<classpathentry kind="lib" path="lib/jme3/jME3-testdata.jar"/>
+	<classpathentry kind="lib" path="lib/jme3/lwjgl.jar"/>
+	<classpathentry kind="lib" path="lib/jme3/nifty-default-controls.jar"/>
+	<classpathentry kind="lib" path="lib/jme3/nifty-style-black.jar"/>
+	<classpathentry kind="lib" path="lib/jme3/nifty.jar"/>
+	<classpathentry kind="lib" path="lib/jme3/stack-alloc.jar"/>
+	<classpathentry kind="lib" path="lib/jme3/vecmath.jar"/>
+	<classpathentry kind="lib" path="lib/jme3/xmlpull-xpp3.jar"/>
+	<classpathentry kind="lib" path="lib/p52b7/core.jar"/>
+	<classpathentry kind="lib" path="lib/p52b7/gluegen-rt-natives-macosx-universal.jar"/>
+	<classpathentry kind="lib" path="lib/p52b7/gluegen-rt.jar"/>
+	<classpathentry kind="lib" path="lib/p52b7/jogl-all-natives-macosx-universal.jar"/>
+	<classpathentry kind="lib" path="lib/p52b7/jogl-all.jar"/>
+	<classpathentry kind="lib" path="lib/p52b7/video/gstreamer-java.jar"/>
+	<classpathentry kind="lib" path="lib/p52b7/video/jna.jar"/>
+	<classpathentry kind="lib" path="lib/p52b7/video/video.jar"/>
+	<classpathentry kind="lib" path="lib/p52b7/serial/RXTXcomm.jar"/>
+	<classpathentry kind="lib" path="lib/p52b7/serial/serial.jar"/>
+	<classpathentry kind="lib" path="lib/p5extlib/controlP5.jar"/>
+	<classpathentry kind="lib" path="lib/p5extlib/generativedesign.jar"/>
+	<classpathentry kind="lib" path="lib/async-http-client-1.4.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

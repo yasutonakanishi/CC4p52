@@ -1,0 +1,55 @@
+#
+## Alias OBJ Material File
+# Exported from SketchUp, (c) 2000-2006 Google, Inc.
+
+newmtl FrontColor
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.330000 0.330000 0.330000
+
+newmtl Google_Earth_Snapshot_1
+Ka 0.000000 0.000000 0.000000
+Kd 0.647059 0.623529 0.560784
+Ks 0.330000 0.330000 0.330000
+map_Kd TheRedPyramid/Google_Earth_Snapshot_1.jpg
+
+newmtl Red_Pyramid_1
+Ka 0.000000 0.000000 0.000000
+Kd 0.862745 0.811765 0.733333
+Ks 0.330000 0.330000 0.330000
+map_Kd TheRedPyramid/Red_Pyramid_1.jpg
+
+newmtl BackColor
+Ka 0.000000 0.000000 0.000000
+Kd 0.643137 0.698039 0.733333
+Ks 0.330000 0.330000 0.330000
+
+newmtl Red_Pyramid_1_1_
+Ka 0.000000 0.000000 0.000000
+Kd 0.862745 0.811765 0.733333
+Ks 0.330000 0.330000 0.330000
+map_Kd TheRedPyramid/Red_Pyramid_1_1_.jpg
+
+newmtl Red_Pyramid_3
+Ka 0.000000 0.000000 0.000000
+Kd 0.796078 0.725490 0.619608
+Ks 0.330000 0.330000 0.330000
+map_Kd TheRedPyramid/Red_Pyramid_3.jpg
+
+newmtl Red_Pyramid_2
+Ka 0.000000 0.000000 0.000000
+Kd 0.745098 0.666667 0.549020
+Ks 0.330000 0.330000 0.330000
+map_Kd TheRedPyramid/Red_Pyramid_2.jpg
+
+newmtl Red_Pyramid_1_2_
+Ka 0.000000 0.000000 0.000000
+Kd 0.862745 0.811765 0.733333
+Ks 0.330000 0.330000 0.330000
+map_Kd TheRedPyramid/Red_Pyramid_1_2_.jpg
+
+newmtl ForegroundColor
+Ka 0.000000 0.000000 0.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.330000 0.330000 0.330000
+

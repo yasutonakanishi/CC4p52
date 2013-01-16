@@ -1,0 +1,6 @@
+Material OTO Lit : phong_lighting.j3md {
+     MaterialParameters {
+         m_Shininess: 8.0
+         m_DiffuseMap: Models/Oto/Oto.jpg
+     }
+}
