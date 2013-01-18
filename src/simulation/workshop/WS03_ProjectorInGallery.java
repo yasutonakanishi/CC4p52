@@ -1,6 +1,7 @@
 package simulation.workshop;
 
 import net.unitedfield.cc.PAppletProjectorNode;
+import net.unitedfield.cc.util.SpatialInspector;
 import processing.core.PApplet;
 import simulation.p5.GravitySim;
 
@@ -10,7 +11,6 @@ import com.jme3.light.DirectionalLight;
 import com.jme3.light.PointLight;
 import com.jme3.material.Material;
 import com.jme3.math.ColorRGBA;
-import com.jme3.math.FastMath;
 import com.jme3.math.Vector3f;
 import com.jme3.post.TextureProjectorRenderer;
 import com.jme3.scene.Geometry;
@@ -28,6 +28,7 @@ public class WS03_ProjectorInGallery extends SimpleApplication{
 	public void simpleInitApp() {
 		setupObjects();
 		setupGallery();
+		setupSpatialInspector();
 	}
 	
 	// ギャラリーの環境を生成
@@ -135,13 +136,25 @@ public class WS03_ProjectorInGallery extends SimpleApplication{
 		rootNode.attachChild(girl);
 	}
 	
+    // プロジェクターの位置や方向を調整するGUIを追加
+	private void setupSpatialInspector() {
+        // GUIを生成
+		SpatialInspector spatialInspector = SpatialInspector.getInstance();
+        // プロジェクタに適用
+		projectorNode.addControl(spatialInspector);
+        // マウスの動きと画面の動きを連動させない
+		this.setPauseOnLostFocus(false);
+        // GUI表示
+		spatialInspector.show();
+	}
+	
 	@Override
 	// 状態の更新(アニメーション)
 	public void simpleUpdate(float tpf) {
-		float lookX = FastMath.cos(timer.getTimeInSeconds() * 0.2f) * 30.0f;
-		projectorNode.lookAt(new Vector3f(lookX, 4.0f, 10), Vector3f.UNIT_Y.clone());
-		//float locZ = FastMath.sin(timer.getTimeInSeconds() * 0.5f) * 5.0f;
-		//projectorNode.setLocalTranslation(new Vector3f(0, 3.5f, locZ));
+		// float lookX = FastMath.cos(timer.getTimeInSeconds() * 0.2f) * 30.0f;
+		// projectorNode.lookAt(new Vector3f(lookX, 4.0f, 10), Vector3f.UNIT_Y.clone());
+		// float locZ = FastMath.sin(timer.getTimeInSeconds() * 0.5f) * 5.0f;
+		// projectorNode.setLocalTranslation(new Vector3f(0, 3.5f, locZ));
 	}
 	
 	@Override

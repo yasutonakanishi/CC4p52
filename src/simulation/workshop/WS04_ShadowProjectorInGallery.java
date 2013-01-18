@@ -1,6 +1,7 @@
 package simulation.workshop;
 
 import net.unitedfield.cc.PAppletProjectorShadowNode;
+import net.unitedfield.cc.util.SpatialInspector;
 import processing.core.PApplet;
 import test.p5.ColorBarsPApplet;
 
@@ -26,7 +27,8 @@ public class WS04_ShadowProjectorInGallery extends SimpleApplication{
 	// アプリケーションの初期化
 	public void simpleInitApp() {
 		setupGallery();
-		setupObjects();		
+		setupObjects();
+		setupSpatialInspector();
 	}
 
 	// ギャラリーの環境を生成
@@ -108,13 +110,24 @@ public class WS04_ShadowProjectorInGallery extends SimpleApplication{
 		girl.setShadowMode(ShadowMode.CastAndReceive);
 		rootNode.attachChild(girl);
 	}
+    // プロジェクターの位置や方向を調整するGUIを追加
+	private void setupSpatialInspector() {
+        // GUIを生成
+		SpatialInspector spatialInspector = SpatialInspector.getInstance();
+        // プロジェクタに適用
+		ppn.addControl(spatialInspector);
+        // マウスの動きと画面の動きを連動させない
+		this.setPauseOnLostFocus(false);
+        // GUI表示
+		spatialInspector.show();
+	}
 
 	@Override
 	// 状態の更新(アニメーション)
 	public void simpleUpdate(float tpf) {				
-		Quaternion q = new Quaternion();
-	    q.fromAngles(0, 0, tpf/10);// x is pitch, y is yaw, z is roll.
-		ppn.rotate(q);
+		// Quaternion q = new Quaternion();
+	    // q.fromAngles(0, 0, tpf/10);// x is pitch, y is yaw, z is roll.
+		// ppn.rotate(q);
 	}
 
 	@Override
