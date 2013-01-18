@@ -54,10 +54,10 @@ public class WS06_ShadowProjectionTemplate extends SimpleApplication {
 	private void selectObject(){
 		// オブジェクトを読み込み
 		//object = (Spatial) assetManager.loadModel("myAssets/Models/TokyoBigSite/TokyoBigSite.obj");
-		//object = (Spatial) assetManager.loadModel("myAssets/Models/WaltDisneyConcertHall/WaltDisneyConcertHall.obj");
+		object = (Spatial) assetManager.loadModel("myAssets/Models/WaltDisneyConcertHall/WaltDisneyConcertHall.obj");
 		//object = (Spatial) assetManager.loadModel("myAssets/Models/TokyoStation/TokyoStation.obj");
 		//object = (Spatial) assetManager.loadModel("myAssets/Models/TheRedPyramid/TheRedPyramid.obj");
-		object = (Spatial) assetManager.loadModel("myAssets/Models/TowerofTheSun/TowerofTheSun.obj");
+		//object = (Spatial) assetManager.loadModel("myAssets/Models/TowerofTheSun/TowerofTheSun.obj");
 		
 		// 選択したオブジェクトをシーンに追加
 		rootNode.attachChild(object);
@@ -91,7 +91,7 @@ public class WS06_ShadowProjectionTemplate extends SimpleApplication {
 		
 		// ライティング
 		DirectionalLight sun = new DirectionalLight();
-		sun.setColor(ColorRGBA.White.mult(0.5f));
+		sun.setColor(ColorRGBA.White.mult(2.0f));
 		sun.setDirection(new Vector3f(0f, 1.0f, -0.75f));
 		rootNode.addLight(sun);
 		AmbientLight al = new AmbientLight();
