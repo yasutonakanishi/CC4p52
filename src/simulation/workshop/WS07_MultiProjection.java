@@ -2,12 +2,15 @@
  * プロジェクションマッピングのためのテンプレート
  *
  */
+
 package simulation.workshop;
 
 import net.unitedfield.cc.PAppletProjectorNode;
 import net.unitedfield.cc.util.SpatialInspector;
 import processing.core.PApplet;
+import simulation.p5.P_2_2_5_01;
 import simulation.p5.ParticleSphere;
+
 import com.jme3.app.SimpleApplication;
 import com.jme3.light.AmbientLight;
 import com.jme3.light.DirectionalLight;
@@ -22,11 +25,11 @@ import com.jme3.scene.shape.Box;
 import com.jme3.texture.Texture;
 import com.jme3.util.SkyFactory;
 
-public class WS05_ProjectionTemplate extends SimpleApplication {
-	Spatial object;	
-	PApplet applet;
+public class WS07_MultiProjection extends SimpleApplication {
+	PApplet applet1, applet2;
+	Spatial object;
 	int 	appletWidth, appletHeight;
-	PAppletProjectorNode projectorNode;
+	PAppletProjectorNode projectorNode1, projectorNode2;
 	
 	@Override
 	// 初期設定
@@ -37,18 +40,22 @@ public class WS05_ProjectionTemplate extends SimpleApplication {
 		setupProjector();
 		setupSpatialInspector();
 	}
+	
 	/******************* ここから下を設定 **************************/
 	
 	// 1. 投射するアプレットを選択
 	private void selectApplet(){
 		// Appletを選択
-		// applet = new P_2_2_5_01();
+		applet1 = new P_2_2_5_01();
 		// applet = new P_2_1_1_03();
 		// applet = new ColorBarsPApplet();
 		// applet = new CapturePApplet();
 		// applet = new GravitySim();
+		// applet = new HyperbolicCoral();
+		// applet = new MikuFlipPApplet();
 		// applet = new SimpleGridPApplet();
-		applet = new ParticleSphere();
+		// applet = new P_2_1_1_03();
+		applet2 = new ParticleSphere();
 		
 		// 選択したアプレットの幅と高さを指定
 		appletWidth = 400;
@@ -72,18 +79,32 @@ public class WS05_ProjectionTemplate extends SimpleApplication {
 	
 	// 3. プロジェクタ設定
 	private void setupProjector(){
-		// 新プロジェクターを作成
-		projectorNode = new PAppletProjectorNode("projector0", assetManager, applet, appletWidth, appletHeight, true);
-		// 建物にあわせて、プロジェクタの配置する位置を決定
-		projectorNode.setLocalTranslation(new Vector3f(0, 4f, 150));
-		// 建物にあわせて、プロジェクタの視点(つまり投射する位置)を決定
-		projectorNode.lookAt(new Vector3f(0, 40f, 0f), Vector3f.UNIT_Y);
-		// プロジェクタを追加
-		rootNode.attachChild(projectorNode);
-		rootNode.attachChild(projectorNode.getFrustmModel());
+		// プロジェクタで投影する画像をレンダリングするTextureProjectorRendererを作成しviewPortに追加
 		TextureProjectorRenderer ptr = new TextureProjectorRenderer(assetManager);
-		ptr.getTextureProjectors().add(projectorNode.getProjector());
 		viewPort.addProcessor(ptr);
+		
+		// 新プロジェクター(1)を作成
+		projectorNode1 = new PAppletProjectorNode("projector1", assetManager, applet1, appletWidth, appletHeight, true);
+		// 建物にあわせて、プロジェクタの配置する位置を決定
+		projectorNode1.setLocalTranslation(new Vector3f(0, 4f, 150));
+		// 建物にあわせて、プロジェクタの視点(つまり投射する位置)を決定
+		projectorNode1.lookAt(new Vector3f(0, 40f, 0f), Vector3f.UNIT_Y);
+		// プロジェクタを追加
+		rootNode.attachChild(projectorNode1);
+		rootNode.attachChild(projectorNode1.getFrustmModel());
+		// プロジェクタをTextureProjectorRendereに追加
+		ptr.getTextureProjectors().add(projectorNode1.getProjector());
+		
+		// 新プロジェクター(2)を作成
+		projectorNode2 = new PAppletProjectorNode("projector2", assetManager, applet2, appletWidth, appletHeight, true);
+		// 建物にあわせて、プロジェクタの配置する位置を決定
+		projectorNode2.setLocalTranslation(new Vector3f(0, 4f, -150));
+		// 建物にあわせて、プロジェクタの視点(つまり投射する位置)を決定
+		projectorNode2.lookAt(new Vector3f(0, 40f, 0f), Vector3f.UNIT_Y);
+		// プロジェクタを追加
+		rootNode.attachChild(projectorNode2);
+		rootNode.attachChild(projectorNode2.getFrustmModel());
+		ptr.getTextureProjectors().add(projectorNode2.getProjector());
 	}
 	
 	/******************* ここから下は必要に応じて設定 **************************/
@@ -141,7 +162,8 @@ public class WS05_ProjectionTemplate extends SimpleApplication {
 	
 	private void setupSpatialInspector() {
 		SpatialInspector spatialInspector = SpatialInspector.getInstance();
-		projectorNode.addControl(spatialInspector);		
+		projectorNode1.addControl(spatialInspector);
+		projectorNode2.addControl(spatialInspector);
 		this.setPauseOnLostFocus(false);
 		spatialInspector.show();		
 	}
@@ -155,7 +177,7 @@ public class WS05_ProjectionTemplate extends SimpleApplication {
 	
 	// メイン
 	public static void main(String[] args){
-		SimpleApplication app = new WS05_ProjectionTemplate();
+		SimpleApplication app = new WS07_MultiProjection();
 		app.setPauseOnLostFocus(false); 
 		app.start();
 	}
