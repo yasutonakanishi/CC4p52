@@ -54,7 +54,7 @@ public void setup() {
     part.vertex(+partSize/2, -partSize/2, sprite.width, 0);
     part.vertex(+partSize/2, +partSize/2, sprite.width, sprite.height);
     part.vertex(-partSize/2, +partSize/2, 0, sprite.height);
-    part.end();    
+    part.endShape();    
     particles.addChild(part);
   }
 
