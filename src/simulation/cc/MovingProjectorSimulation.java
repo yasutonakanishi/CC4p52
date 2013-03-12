@@ -72,7 +72,7 @@ public class MovingProjectorSimulation extends SimpleApplication  {
 
 	// プロジェクタ設定
 	public void setupProjector(){
-		ppn = new PAppletProjectorShadowNode("Projector0", assetManager, viewPort, 1024, 1024, new ColorBarsPApplet(), 200, 200, false);
+		ppn = new PAppletProjectorShadowNode("Projector0", assetManager, viewPort, 1024, 1024, new ColorBarsPApplet(), 200, 200, true);
 		rootNode.attachChild(ppn);
 		rootNode.attachChild(ppn.getFrustmModel());   
 		ppn.rotate((float)(Math.PI)*0.51f, 0, 0);

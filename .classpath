@@ -39,5 +39,6 @@
 	<classpathentry kind="lib" path="lib/p52b8/video/video.jar"/>
 	<classpathentry kind="lib" path="lib/p52b8/serial/RXTXcomm.jar"/>
 	<classpathentry kind="lib" path="lib/p52b8/serial/serial.jar"/>
+	<classpathentry kind="lib" path="lib/p52b8/gluegen-rt.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
